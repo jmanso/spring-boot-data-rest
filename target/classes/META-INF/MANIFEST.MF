@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: DataRest
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: janeconnelly
+Implementation-Vendor-Id: com.jml.training
+Build-Jdk: 1.8.0_101
+Implementation-URL: http://projects.spring.io/spring-boot/DataRest/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

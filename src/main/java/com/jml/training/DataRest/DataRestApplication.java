@@ -24,12 +24,34 @@ public class DataRestApplication {
 	@Bean
 	CommandLineRunner executeRun(PlayerRepository playerRepository) {
 		return args -> {
-			Arrays.asList(new Player(1L, "name", "team"),
-					new Player(2L, "name1", "team1"),
-					new Player(3L, "name2", "team2")).forEach(player -> playerRepository.save(player));
+			Arrays.asList(new Player("name", "team"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name1", "team1"),
+					new Player("name2", "team2"))
+			.forEach(player -> playerRepository.save(player));
 			
 			playerRepository.findAll().forEach(System.out::println);
-			System.out.println(playerRepository.findByName("name1"));
 		};
 	}
 }
@@ -51,8 +73,7 @@ class Player {
 	public Player() {
 	}
 	
-	public Player(Long id, String name, String team) {
-		this.id = id;
+	public Player(String name, String team) {
 		this.name = name;
 		this.team = team;
 	}
